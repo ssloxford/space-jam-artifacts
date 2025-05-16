@@ -153,8 +153,8 @@ def lineplot(df, N, legend=True):
     
     # Add the dotted lines into the legend
     lines = []
-    lines.append(plt.plot([np.NaN], linestyle="-", color="black")[0])    
-    lines.append(plt.plot([np.NaN], linestyle="dotted", color="black")[0])    
+    lines.append(plt.plot([np.nan], linestyle="-", color="black")[0])    
+    lines.append(plt.plot([np.nan], linestyle="dotted", color="black")[0])    
     
     labels = ["Frame Error Rate", "Codeword Error Rate"]
     

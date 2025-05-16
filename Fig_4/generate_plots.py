@@ -105,7 +105,7 @@ def lineplot(df, df_opt, opt_threshold=None, legend=True, ax=None):
     
     # Add the dotted lines into the legend
     lines = []
-    lines.append(plt.plot([np.NaN], linestyle="dotted", color="black")[0])    
+    lines.append(plt.plot([np.nan], linestyle="dotted", color="black")[0])    
     
     labels = [r"Zero noise, $N_0 = 0$"]
     
@@ -309,10 +309,10 @@ def f(hdv, ncol=2):
 
     # Add to legend
     lines = []
-    lines.append(plt.plot([np.NaN], linestyle="-", color="black", alpha=0.0, label=" ")[0])
-    lines.append(plt.plot([np.NaN], linestyle="-", color="black", label="Synchronized")[0])
-    lines.append(plt.plot([np.NaN], linestyle="dashed", color="black", label="Desynchronized")[0])
-    lines.append(plt.plot([np.NaN], linestyle="dotted", color="black", label="Gaussian")[0])
+    lines.append(plt.plot([np.nan], linestyle="-", color="black", alpha=0.0, label=" ")[0])
+    lines.append(plt.plot([np.nan], linestyle="-", color="black", label="Synchronized")[0])
+    lines.append(plt.plot([np.nan], linestyle="dashed", color="black", label="Desynchronized")[0])
+    lines.append(plt.plot([np.nan], linestyle="dotted", color="black", label="Gaussian")[0])
         
     
         
