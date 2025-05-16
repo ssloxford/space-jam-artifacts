@@ -21,15 +21,24 @@ Compiler Info: Python interpreter v3.11
 For the simulations:
 
 * python3
-* py3-typer
+* gnuradio
 * py3-numpy
 * py3-matplotlib
 * py3-seaborn
+* py3-pandas
 * py3-tqdm
+* boost-dev
+* gnuradio-dev
 
-For the real-world experiments:
+A custom branch of [ldpc-toolbox](https://github.com/eddsalkield/ldpc-toolbox) of ldpc-toolbox is required, to be installed within [gr-ldpc-toolbox](https://github.com/daniestevez/gr-ldpc-toolbox).
+This furthermore requires:
 
-* GNU Radio
+* cmake
+* make
+* gcc
+* g++
+* rust
+* cargo
 
 ## Datasets
 
@@ -86,8 +95,8 @@ The supplied VM has the following credentials:
 Username: root
 Password: [empty string]
 
-The scripts are found in `/root`, and are identical to those described in section **Running the code**.
-The figures are output to `/root/out`.
+The scripts are found in `/root/space-jam-artifacts`, and are identical to those described in section **Running the code**.
+The figures are output to `/root/space-jam-artifacts/plot`.
 
 <!--### Running the hardware experiments-->
 
