@@ -1,0 +1,41 @@
+
+\begin{tabular}{@{}ccccccccc@{}}
+\toprule
+&&& \multicolumn{3}{c}{\textbf{Desynchronized}} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{} \\ 
+\cmidrule(lr){4-6}
+\textbf{Protocol} & \textbf{Target} & \textbf{FER} & \textbf{Gaussian} & \textbf{Pulsed Symb.} & \textbf{Deinterleaved} & \textbf{Frame sync} & \textbf{Synchronized} & \textbf{Full knowledge} \\
+\midrule
+\multirow{4}{*}{\makecell{\textbf{CCSDS TC} $\mathbf{(128, 68)}$ \\ $CFR = 16$; BPSK \\ $d_\text{min} = 14$~\cite{ccsds_230.1_G_3}; $d_\text{pre} = \SI{64}{\bit}$}}
+
+& Code & $\sim$100\% & 1.00 \textit{(-)} & 0.44 \textit{(-0.56)} & -8.93 \textit{\textbf{(-9.37)}} & -14.37 \textit{\textbf{(-5.44)}} & -17.48 \textit{\textbf{(-3.11)}} & -26.35 \textit{\textbf{(-8.87)}} \\
+& Code & $\sim$50\% & 0.33 \textit{(-)} & -2.22 \textit{(-2.55)} & -11.98 \textit{\textbf{(-9.76)}} & -17.42 \textit{\textbf{(-5.44)}} & -20.54 \textit{\textbf{(-3.12)}} & -29.41 \textit{\textbf{(-8.87)}}\\
+& Preamble & $\sim$100\% & - \textit{(-)} & - \textit{(-)} & - \textit{(-)} & - \textit{(-)} & -8.54 \textit{(-)} & -8.54 \textit{(+0.00)} \\
+& Preamble & $\sim$50\% & 52.24 \textit{(-)} & 18.74 \textit{\textbf{(-33.50)}} & 18.74 \textit{(+0.00)} & 10.29 \textit{\textbf{(-8.45)}} & -11.60 \textit{\textbf{(-21.88)}} & -11.60 \textit{(+0.00)}\\
+
+\midrule
+\multirow{4}{*}{\makecell{\textbf{CCSDS TM} $\mathbf{r=4/5}$ \\ $CFR = 16$; QPSK \\ $d_\text{min} = 27$ $\dagger$~\cite{butler2013bounds}; $d_\text{pre} = \SI{64}{\bit}$}}
+
+& Code & $\sim$100\% & -4.85 \textit{(-)} & -8.48 \textit{\textbf{(-3.63)}} & -15.68 \textit{\textbf{(-7.20)}} & -15.73 \textit{(-0.05)} & -16.33 \textit{(-0.60)} & -37.18 \textit{\textbf{(-20.85)}} \\
+& Code & $\sim$50\% & -5.25 \textit{(-)} & -9.09 \textit{\textbf{(-3.84)}} & -18.73 \textit{\textbf{(-9.64)}} & -18.78 \textit{(-0.05)} & -19.39 \textit{(-0.61)} & -40.24 \textit{\textbf{(-20.85)}}\\
+& Preamble & $\sim$100\% & - \textit{(-)} & - \textit{(-)} & - \textit{(-)} & - \textit{(-)} & -22.06 \textit{(-)} & -22.06 \textit{(+0.00)} \\
+& Preamble & $\sim$50\% & 46.22 \textit{(-)} & 14.74 \textit{\textbf{(-31.48)}} & 14.74 \textit{(+0.00)} & -4.35 \textit{\textbf{(-19.08)}} & -25.11 \textit{\textbf{(-20.76)}} & -25.11 \textit{(+0.00)}\\
+
+\midrule
+\multirow{4}{*}{\makecell{\textbf{DVB-S2} $\mathbf{r=4/5}$ \\ $CFR = 1$; QPSK \\ $d_\text{min} = 32$; $d_\text{pre} = \SI{26}{\symbol}$}}
+
+& Code & $\sim$100\% & -4.89 \textit{(-)} & -8.00 \textit{\textbf{(-3.11)}} & -8.00 \textit{(+0.00)} & -8.05 \textit{(-0.05)} & -8.17 \textit{(-0.12)} & -29.67 \textit{\textbf{(-21.50)}} \\
+& Code & $\sim$50\% & -5.00 \textit{(-)} & -10.00 \textit{\textbf{(-5.00)}} & -11.05 \textit{(-1.05)} & -11.10 \textit{(-0.05)} & -11.23 \textit{(-0.13)} & -32.73 \textit{\textbf{(-21.50)}}\\
+& Preamble & $\sim$100\% & - \textit{(-)} & - \textit{(-)} & - \textit{(-)} & - \textit{(-)} & -30.69 \textit{(-)} & -30.69 \textit{(+0.00)} \\
+& Preamble & $\sim$50\% & 48.84 \textit{(-)} & 18.58 \textit{\textbf{(-30.26)}} & 18.58 \textit{(+0.00)} & -12.44 \textit{\textbf{(-31.02)}} & -33.75 \textit{\textbf{(-21.30)}} & -33.75 \textit{(+0.00)}\\
+
+\midrule
+\multirow{4}{*}{\makecell{\textbf{DVB-S2} $\mathbf{r=9/10}$ \\ $CFR = 1$; QPSK \\ $d_\text{min} = 32$; $d_\text{pre} = \SI{26}{\symbol}$}}
+
+& Code & $\sim$100\% & -6.78 \textit{(-)} & -10.89 \textit{\textbf{(-4.11)}} & -10.89 \textit{(+0.00)} & -10.94 \textit{(-0.05)} & -11.57 \textit{(-0.63)} & -29.67 \textit{\textbf{(-18.10)}} \\
+& Code & $\sim$50\% & -6.89 \textit{(-)} & -9.89 \textit{\textbf{(-3.00)}} & -13.94 \textit{\textbf{(-4.05)}} & -13.99 \textit{(-0.05)} & -14.62 \textit{(-0.63)} & -32.73 \textit{\textbf{(-18.11)}}\\
+& Preamble & $\sim$100\% & - \textit{(-)} & - \textit{(-)} & - \textit{(-)} & - \textit{(-)} & -30.69 \textit{(-)} & -30.69 \textit{(+0.00)} \\
+& Preamble & $\sim$50\% & 48.84 \textit{(-)} & 18.58 \textit{\textbf{(-30.26)}} & 18.58 \textit{(+0.00)} & -12.44 \textit{\textbf{(-31.02)}} & -33.75 \textit{\textbf{(-21.30)}} & -33.75 \textit{(+0.00)}\\
+
+\bottomrule
+\end{tabular}
+
